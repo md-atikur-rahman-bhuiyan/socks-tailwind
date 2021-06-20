@@ -1,16 +1,27 @@
 {
-  "name": "socks",
+  "name": "socks-tailwind",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build -i src/style.scss -o dist/style.css",
-    "css:watch": "tailwind build -i src/style.scss -o dist/style.css -w"
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md-atikur-rahman-bhuiyan/socks-tailwind.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/md-atikur-rahman-bhuiyan/socks-tailwind/issues"
+  },
+  "homepage": "https://github.com/md-atikur-rahman-bhuiyan/socks-tailwind#readme",
   "dependencies": {
-    "tailwindcss": "^2.2.0"
+    "autoprefixer": "^10.2.6",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.2"
   }
 }
